@@ -2,21 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    public static GameControl Instance;
+    public static GameControl instance;
     public GameObject gameOverText;
     public TextMeshProUGUI ScoreText;
     public bool gameOver = false;
     
     void Awake ()
     {
-       if (Instance == null)
+       if (instance == null)
         {
-            Instance = this;
+            instance = this;
         }
-       else if (Instance != this)
+       else if (instance != this)
         {
             Destroy(gameObject);
         }
@@ -25,7 +26,10 @@ public class GameControl : MonoBehaviour
     
     void Update()
     {
-        
+        if (gameOver == true && Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void SonicDied()

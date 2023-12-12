@@ -35,6 +35,6 @@ public class SonicJump : MonoBehaviour {
     {
         isDead = true;
         anim.SetTrigger ("Die");
-        GameControl.Instance.SonicDied ();
+        GameControl.instance.SonicDied ();
     }
 }
