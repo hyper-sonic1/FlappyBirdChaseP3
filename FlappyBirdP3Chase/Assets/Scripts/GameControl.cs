@@ -10,6 +10,7 @@ public class GameControl : MonoBehaviour
     public GameObject gameOverText;
     public TextMeshProUGUI ScoreText;
     public bool gameOver = false;
+    public float scrollSpeed = -1.5f;
     
     void Awake ()
     {
