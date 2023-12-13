@@ -28,6 +28,7 @@ public class GameControl : MonoBehaviour
     {
         if (gameOver == true && Input.GetMouseButtonDown(0))
         {
+            gameOver = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
