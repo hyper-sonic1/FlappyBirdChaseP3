@@ -9,6 +9,7 @@ public class Badniks : MonoBehaviour
         if (other.GetComponent<SonicJump>() != null)
         {
             GameControl.instance.SonicScored ();
+            
         }
     }
 }

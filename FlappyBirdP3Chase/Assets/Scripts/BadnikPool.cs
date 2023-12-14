@@ -29,14 +29,18 @@ public class BadnikPool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeSinceLastSpawned = Time.deltaTime;
+        timeSinceLastSpawned += Time.deltaTime;
 
         if (GameControl.instance.gameOver == false && timeSinceLastSpawned >= spawnRate)
         {
             timeSinceLastSpawned = 0;
             float spawnYPosition = Random.Range (BadnikMin, BadnikMax);
             Badniks[currentBadnik].transform.position = new Vector2(spawnXPosition, spawnYPosition);
-            
+            currentBadnik++;
+            if (currentBadnik >= BadnikPoolSize)
+            {
+                currentBadnik = 0;
+            }
         }  
     }
 }

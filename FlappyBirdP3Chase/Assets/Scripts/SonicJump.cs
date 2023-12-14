@@ -10,6 +10,11 @@ public class SonicJump : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator anim;
 
+    AudioSource audioSource;
+    public AudioClip SonicDeath;
+    public AudioClip Checkpoint;
+    public AudioClip Sonicjump;
+
     // Start is called before the first frame update
     void Start()
     {
