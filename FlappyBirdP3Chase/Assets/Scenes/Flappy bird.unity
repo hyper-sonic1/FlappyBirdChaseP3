@@ -1077,6 +1077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1898144594}
+  scoreText: {fileID: 0}
   ScoreText: {fileID: 1139203649}
   gameOver: 0
   scrollSpeed: -1.5
@@ -1105,7 +1106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3577553100708176806, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_Name
-      value: points
+      value: scoreText
       objectReference: {fileID: 0}
     - target: {fileID: 3577553100708176806, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_IsActive
@@ -1435,11 +1436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 1236.5392
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 195.2184
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1471,11 +1472,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.000030518
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 388
       objectReference: {fileID: 0}
     - target: {fileID: 5327614946105442599, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1491,11 +1492,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_text
-      value: Game over
+      value: "      Game over\n        "
       objectReference: {fileID: 0}
     - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
+      propertyPath: m_margin.z
+      value: -160.06604
       objectReference: {fileID: 0}
     - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_fontAsset
@@ -1511,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7644731971743206181, guid: 46940154000230b47b437e1eb6330a6e, type: 3}
       propertyPath: m_enableKerning
