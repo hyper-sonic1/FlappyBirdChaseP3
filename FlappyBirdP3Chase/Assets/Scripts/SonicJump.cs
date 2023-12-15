@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,7 +33,12 @@ public class SonicJump : MonoBehaviour {
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upforce));
                 anim.SetTrigger("Jump");
+               
             }
+        }
+        if(Input.GetMouseButtonDown(0)) 
+        { 
+           Sonicjump = GetComponent<AudioClip>();
         }
     }
 
@@ -41,6 +47,8 @@ public class SonicJump : MonoBehaviour {
         rb2d.velocity = Vector2.zero;
         isDead = true;
         anim.SetTrigger ("Die");
-        GameControl.instance.SonicDied ();
+        GameControl.instance.SonicDied();
+        
     }
+
 }

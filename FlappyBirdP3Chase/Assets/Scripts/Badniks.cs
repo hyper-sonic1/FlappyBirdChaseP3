@@ -11,5 +11,6 @@ public class Badniks : MonoBehaviour
             GameControl.instance.SonicScored ();
             
         }
+        
     }
 }
